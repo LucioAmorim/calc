@@ -1,0 +1,22 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "description": "Exemplo de GitHub Actions",
+  "main": "calc",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "author": "Lúcio Amorim",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "supertest": "^7.0.0"
+  }
+}
