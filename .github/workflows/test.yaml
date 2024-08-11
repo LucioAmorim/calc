@@ -2,7 +2,7 @@ name: Test calc app
 run-name: ${{ github.actor }} triggered test!
 on: [push]
 jobs:
-  Jest Test Calc:
+  Jest-Test-Calc:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
