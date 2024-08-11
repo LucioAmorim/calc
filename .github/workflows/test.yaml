@@ -10,5 +10,12 @@ jobs:
       with:
         node-version: '20'
         cache: 'npm'
-    - run: npm install
-    - run: npm test
+
+    - name: Instalar dependências
+      run: npm install
+
+    - name: Rodar testes
+    - run: npm test --coverage --coverageReporters json-summary
+
+    - name: Jest Resultas
+      uses: MishaKav/jest-coverage-comment@main
