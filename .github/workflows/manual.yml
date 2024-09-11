@@ -1,0 +1,26 @@
+name: SendEmail
+
+on:
+  workflow_dispatch:
+
+jobs:
+  # This workflow contains a single job called "greet"
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send Email
+      uses: hilarion5/send-mail@v1
+      with:
+        smtp-server: smtp.example.com
+        smtp-port: 465
+        smtp-secure: true
+        from-email: genunasumus@gmail.com
+        to-email: lucioaa@outlook.com
+        username: genunasumus
+        password: knight8497@A
+        subject: Test Email
+        body: This is a test email sent from GitHub Actions.
+        html: |
+          <h1>This is a test email</h1>
+          <p>Test Paragraph</p>
